@@ -1,0 +1,34 @@
+:root {
+  --teal: #3EBAB1;
+  --lightteal: #63D1C9;
+  --lighterteal: #D0F8F5;
+  --white: #ffffff;
+  --darkgrey: #383838;
+  --lightgray: #cccccc;
+  --goldenrod:  goldenrod;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkgrey);
+  color: var(--white);
+  display: flex; /* Make the body element a flex container */
+  flex-direction: column; /* Change the flexbox axis from the default which is row*/
+  height: 100%; /* I needed this */
+  min-height: 100vh;  /* and this to make it work right */
+}
+
+a {
+  text-decoration: none;
+  color: var(--goldenrod);
+}
+
+.site-banner-header h1 {
+  text-align: center;
+  font-family: 'Neue Aachen Pro Regular';
+}
