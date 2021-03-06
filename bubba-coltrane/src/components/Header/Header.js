@@ -15,13 +15,13 @@ function Header() {
   }
   return (
     <div className="App">
-       <nav class="navbar">
-    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+       <nav className="navbar">
+    <label className="navbar-toggle" id="js-navbar-toggle" for="chkToggle" >
             <i><FontAwesomeIcon icon={ faBars } /></i>
         </label>
-    <a href="#" className="navbar-brand">Bubba Coltrane & The Train Wrecks</a>
+    <a href="/" className="navbar-brand">Bubba Coltrane & The Train Wrecks</a>
     <input type="checkbox" id="chkToggle"></input>
-    <ul class="main-nav" id="js-menu">
+    <ul className="main-nav" id="js-menu">
       <li>
       <Link to="/" className="navbar-item" >
               Home

@@ -31,4 +31,18 @@ a {
 .site-banner-header h1 {
   text-align: center;
   font-family: 'Neue Aachen Pro Regular';
+  color: var(--white);
+  text-shadow: 2px 2px var(--darkgrey);
+}
+
+.site-banner-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

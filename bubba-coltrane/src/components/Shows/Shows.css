@@ -1,0 +1,22 @@
+
+
+.shows.site-banner-bg {
+    background-image: url(../../assets/black-sparrow.png); 
+    background-position: center -155px;
+    height: 350px;
+   }
+
+   .show-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--lightgray);
+ 
+  }
+
+  .show-grid div {
+    width: 32%;
+   align-items: center; 
+   border: 1px solid var(--lightgray);
+   padding: 15px 0;
+  }

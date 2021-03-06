@@ -5,8 +5,9 @@ footer, .footer {
 
   .copyright {
     flex-grow: 1;
-    justify-content: flex-end;
-  }
+    font-size: 12px;
+    font-family: 'Neue Aachen Pro Regular';
+}
 
   .social-media {
     flex-grow: 4;

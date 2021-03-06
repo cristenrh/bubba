@@ -1,21 +1,19 @@
 import './Contact.css';
-import ContactUs from "../../assets/bubba-contact.png";
 
 function Contact() {
 return (
     <div className="App">
 
         <div >
-            <div className="site-banner-header">
-                <h1 >
-               Contact
-                </h1>
-            </div>
-            <section  className="cover-bg content">
+        <div className="container contact site-banner-bg">
+                <div className="site-banner-header">
+                    <h1 >
+                    Contact
+                    </h1>
+                </div>
 
-            <div className="grid-container pv3">
-                <div>
-              
+                </div>
+            <section  className="content">
                 <h3 >
                 Let Bubba Entertain You!
                 </h3>
@@ -35,14 +33,8 @@ return (
                 For Booking information email Bob Hewett:<br/>
                 <a href="mailto:bubbacoltrane@gmail.com">bubbacoltrane@gmail.com</a>
                 </p>
-                </div>
-
-                <div>       
-                <img className="" src={ ContactUs } alt="Contact Us " />
-                </div>
-            </div>
- </section>
-  
+                </section>
+           
             </div>
         </div>
     );

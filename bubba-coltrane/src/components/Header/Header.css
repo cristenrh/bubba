@@ -4,14 +4,6 @@ nav.navbar {
   font-size: 18px;
   padding-bottom: 10px;
 }
-/* .navbar {
-display: flex;
-justify-content: space-between;
-padding-bottom: 0;
-height: 55px;
-align-items: center;
-} */
-
 
 .main-nav {
 list-style-type: none;
@@ -69,6 +61,12 @@ color: var(--lightgray);
  
 #chkToggle:checked + ul.main-nav {
   display: block;
+  position: relative;
+  top: 24px;
+  left: -50px;
+  z-index: 10;
+  background: var(--darkgrey);
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,11 +81,6 @@ color: var(--lightgray);
   .navbar-brand {
     position: relative;
     top: 0;
-  }
-
-
-  #chkToggle:checked + ul.main-nav {
-    display: flex;
   }
 
   .main-nav {

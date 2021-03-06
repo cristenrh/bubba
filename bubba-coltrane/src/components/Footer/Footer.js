@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.css';
 
 // get our fontawesome imports
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons' ;
 import { faYoutube } from '@fortawesome/free-brands-svg-icons' ;
@@ -23,7 +22,7 @@ function Footer() {
       <div className="App">
 
 <footer className="footer">  
-        <div class="flex-container">
+        <div className="flex-container">
             <div className="copyright"> 
                 <p> &copy; {getCurrentYear()} Bubba Coltrane Music</p>
             </div>

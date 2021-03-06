@@ -9,7 +9,9 @@ function Listen() {
                         Listen
                     </h1>
                 </div>
-               
+                <div class="row">
+      	<iframe src="https://open.spotify.com/embed/album/6rHkKtc2Zl1a0sA2Dz2gTz" width="100%" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
                   
                 </div>
             </div>

@@ -1,70 +1,51 @@
 
 import './Shows.css';
-import Brewtrain from "../../assets/brewTrainCover.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Script from "react-load-script";
+import React from "react";
 
-function Shows() {
+class Shows extends React.Component {
+	state = { scriptLoaded: false };
 
+	handleScriptError() {
+		console.log("Error while loading script");
+	}
 
-return (
+	handleScriptLoad() {
+		console.log("Script loaded successfully");
+		this.setState({ scriptLoaded: true });
+	}
 
-        <div className="App">
-            <div >
-             
-                <section  className="cover-bg content">
-                    <div>
-                    <p><i>"Bob Dylan once said "but I was so much older then, I'm younger than that now."
-              I'm quoting Dylan to prove that I know a lot about music.
-              I tried to listen to Brew Train impassively but suddenly felt one buttock move and then another.
-              Overall I have to give it two bums up"</i></p>
-              <p>- Someone Famous</p>
-                        <div className="grid-container tc pv3">
-                                        
-                            <div> 
-                                <img className="brewcover" src={Brewtrain} alt="Brew Train Album Cover" /></div>
-                            
-                            <div>
-                                <h3>Our first EP, <br/>
-                                <i>Brew Train </i> <br/>
-                                  Released May 27, 2020!</h3>
-                                <p>
-                                    Available Now on: 
-                                    <div className="inner-grid-container">
+	render() {
+		return (
+			<div>
+				<Script
+					url="https://widget.bandsintown.com/main.min.js"
+					onError={this.handleScriptError.bind(this)}
+					onLoad={this.handleScriptLoad.bind(this)}
+				/>
 
-<div>
-
-
-</div>
-
-
-                                    </div>
-                                    
-                                </p>
-                                
-                                
-                                </div>
-                                  
-                            
+            <div className="App">
+                    <div >
+                        <div className="container shows site-banner-bg">
+                            <div className="site-banner-header">
+                                <h1>
+                                    Shows and Events
+                                </h1>
                             </div>
-                   
 
-                            <div  className="site-banner-header">
-                        
-                            </div>
-                        
+                        </div>
+                        <div className="content">
+                            <a class="bit-widget-initializer"
+                                data-artist-name="Bubba Coltrane and the Train Wrecks" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false"
+                                data-text-color="#ffffff" data-link-color="goldenrod" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#FFFFFF"
+                                data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
+                        </div>
                     </div>
-                </section>
-                
-            </div>
-        </div>
-       
-       
-       
-       
-       );
-      }
- 
-      
+                </div>
+         </div>
+		);
+	}
+}
 
-      
-      export default Shows;
+export default Shows;
+
