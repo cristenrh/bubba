@@ -9,10 +9,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
 
-  function toggleBurgerMenu() {
-    document.querySelector('.navbar-menu').classList.toggle('is-active');
-    document.querySelector('.navbar-burger').classList.toggle('is-active');
-  }
+  // function toggleBurgerMenu() {
+  //   document.querySelector('.navbar-menu').classList.toggle('is-active');
+  //   document.querySelector('.navbar-burger').classList.toggle('is-active');
+  // }
   return (
     <div className="App">
        <nav className="navbar">
