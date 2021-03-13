@@ -1,108 +1,119 @@
-
-      
-nav.navbar {
-  font-size: 18px;
-  padding-bottom: 10px;
+/*Desktop View*/
+.header {
+  display: flex;
+  background: var(--darkgrey);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
 }
-
-.main-nav {
-list-style-type: none;
-display: none;
-}
-
-.main-nav li {
-text-align: left;
-margin: 15px auto;
-}
-.navbar-toggle {
-position: absolute;
-top: 10px;
-right: 20px;
-cursor: pointer;
-color: var(--lightgray);
-font-size: 20px;
-}
-
-#chkToggle {
-display: none;
-}
-
-.nav-links {
-text-decoration: none;
-color: rgba(255, 255, 255, 0.7);
-}
-
-   
-a.navbar-item{
-  background: none;
-  color: var(--lightgray); 
+.logo-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  color: var(--lightgray);
   font-family: 'Neue Aachen Pro Regular';
-  font-size: 17px;
-  padding: 0.5rem 1.75rem;
-  text-decoration: none;
 }
-
-a.navbar-item:hover,
-a.navbar-item:focus{
-  color: var(--white) !important;
-  text-decoration: none;
-}
-  
-.navbar-brand {
-color: var(--lightgray);
+.logo-container {
+  align-items: center;
+  color: var(--lightgray);
+  display: flex;
   font-family: 'Neue Aachen Pro Regular';
   font-size: 18px;
   font-weight: bold;
+  justify-content: flex-start;
   padding-left: 15px;
   position: relative;
   text-decoration: none;
-  top: 15px;
-}
- 
-#chkToggle:checked + ul.main-nav {
-  display: block;
-  position: relative;
-  top: 24px;
-  left: -50px;
-  z-index: 10;
-  background: var(--darkgrey);
-  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
+.logo-container a{
+  color: var(--lightgray);
+  font-family: 'Neue Aachen Pro Regular';
+}
+
+.nav-options {
+  padding-left: 25px;
+  display: flex;
+  flex-flow: row;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: var(--lightgray); 
+  font-family: 'Neue Aachen Pro Regular';
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.nav-options a {
+background: none;
+color: var(--lightgray); 
+font-family: 'Neue Aachen Pro Regular';
+font-size: 17px;
+padding: 0.5rem 1.75rem;
+text-decoration: none;
+}
+
+.mobile-option {
+  display: none;
+}
+
+.option :hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 800px) {
+  /*Mobile View */
+  .header {
+    padding: 0px 10px;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-options {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: #9899d1;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: flex;
     align-items: center;
-  }
-
-  .navbar-brand {
-    position: relative;
-    top: 0;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
     justify-content: flex-end;
+    height: 10vw;
+    padding: 30px 0px;
   }
 
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
-  }
+ .mobile-menu {
+  display: block;
+  cursor: pointer;
+} 
+ 
 }
+

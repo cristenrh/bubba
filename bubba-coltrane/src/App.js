@@ -14,38 +14,41 @@ import {
   Route,
 } from "react-router-dom";
 
+import { createBrowserHistory } from 'history';
+
 export default function App() {
+  const history = createBrowserHistory();
   return (
     <Router>
-      <div className="container">
+      
+      <div basename={'/react'} className="container" history={history} >
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-            <Header/>
+          <Header/>
             <Switch>
-          <Route exact path="/">
+          <Route exact path={`${process.env.PUBLIC_URL}/`}  component={Home}>
             <Home />
           </Route>
-          <Route path="/about">
+          <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} >
             <About />
           </Route>
-          <Route path="/listen">
+          <Route exact path={`${process.env.PUBLIC_URL}/listen`} component={Listen} >
             <Listen />
           </Route>
-          <Route path="/contact">
+          <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact} >
             <Contact />
           </Route>
-          <Route path="/video">
+          <Route exact path={`${process.env.PUBLIC_URL}/video`} component={Video} >
             <Video />
           </Route>
-          <Route path="/shows">
+          <Route exact path={`${process.env.PUBLIC_URL}/shows`} component={Shows} >
             <Shows />
           </Route>
         </Switch>
         <Footer/>
       </div>
     </Router>
-    
-
+  
   );
 }
 
