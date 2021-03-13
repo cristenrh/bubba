@@ -7,9 +7,10 @@
 .contact.site-banner-bg {
   background-image: url(../../assets/bubba-contact.png); 
   background-position: center -60px;
-  height: 350px;
  }
  
- @media only screen and (max-width:850px) {
-  
-   }
+ @media only screen and (max-width:800px) {
+  .contact.site-banner-bg {
+    background-position: center -55px;
+  }
+}
