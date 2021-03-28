@@ -1,9 +1,8 @@
 
 
 .shows.site-banner-bg {
-    background-image: url(../../assets/black-sparrow.png); 
-    background-position: center -155px;
-    height: 350px;
+    background-image: url(../../assets/black-sparrow2.png); 
+    background-position: center -125px;
    }
 
    .show-grid {
@@ -19,4 +18,10 @@
    align-items: center; 
    border: 1px solid var(--lightgray);
    padding: 15px 0;
+  }
+
+  @media only screen and (max-width:600px) {
+    .shows.site-banner-bg {
+      background-position: center -5px;
+    }
   }

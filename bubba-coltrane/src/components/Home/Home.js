@@ -18,6 +18,11 @@ return (
 
         <div className="App">
             <div >
+
+            <div className="container home site-banner-bg">
+
+                </div>
+          
              <section  className="cover-bg content">
                   
                             <p><i>"Bob Dylan once said "but I was so much older then, I'm younger than that now."
