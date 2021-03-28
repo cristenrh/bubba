@@ -2,7 +2,7 @@
   "name": "bubba-coltrane",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cristenrh.github.io/bubba",
+  "homepage": "http://www.bubbacoltrane.com/react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -17,6 +17,8 @@
     "react-load-script": "^0.0.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-youtube": "^7.13.1",
+    "react-youtube-playlist": "^2.2.8",
     "tachyons": "^4.12.0",
     "web-vitals": "^1.1.0"
   },
