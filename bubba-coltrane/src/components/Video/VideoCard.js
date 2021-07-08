@@ -1,23 +1,23 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
-const Card = ({name, instrument, photo, bio}) => {
+const VideoCard= ({id, title}) => {
+    const opts = {
+      // height: '390',
+      // width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 0,
+        modestbranding: 1,
+        rel: 0,
+      }
+    }
     return (
-      
-        <div className='tc gallery-card dib ma2'>
-            <div class="gallery-card-inner ">
-              <div class="gallery-card-front bg-black pa2">
-                <img src ={`http://bubbacoltrane.com/images/${photo}`}  alt = {`${name}`}/>
-                      <h3>{name}</h3>
-                      <p>{instrument}</p>       
-                </div>
-                <div class="gallery-card-back pa2">
-                  <h3>{name}</h3>
-                  <p>{instrument}</p>
-                  <p>{bio}</p>
-                </div>
-              </div>
-        </div>
+      <div className="grid-container ma4 video">
+      <div className="vid-title"> <h3>{title}</h3></div>
+        <div className="vid-player"><YouTube videoId={id} opts={opts} /></div>
+    </div>
     )
 };
 
-export default Card;
+export default VideoCard;

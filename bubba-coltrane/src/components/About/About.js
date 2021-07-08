@@ -16,10 +16,10 @@ function About() {
 
         </div>
 
-        <div class="panel-wrapper">
-          <a href="#show" class="show btn" id="show">...Read More</a>
-          <a href="#hide" class="hide btn" id="hide">Read Less</a>
-          <div class="bio content">
+        <div className="panel-wrapper">
+          <a href="#show" className="show btn" id="show">...Read More</a>
+          <a href="#hide" className="hide btn" id="hide">Read Less</a>
+          <div className="bio content">
             <p>
               Remember when music was fun? Remember when you danced, laughed, and sang along arm-in-arm with your friends? Remember when bands actually played real instruments while wowing you with musical chops.. you know...with guitars, drums and a honest-to-god, real horn section?
             </p>
@@ -49,7 +49,7 @@ function About() {
             </p>
 
           </div>
-          <div class="fade"></div>
+          <div className="fade"></div>
         </div>
         <div className="tc mt4 content">
         <div className="site-banner-header">

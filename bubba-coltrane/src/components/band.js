@@ -43,3 +43,21 @@ export const band = [
     }
   ];
   
+  export const video = [
+    {
+      id: 'cWjnvhJ1Rc0',
+      title: 'Bob Knoxious Shuffle',
+    },
+    {
+      id: 'J_K3Pu-5FoY',
+      title: 'Beer Car Love Train - Official',
+    },
+    {
+      id: 'XEyzw6NVNPU',
+      title: '3 Oz. Pour',
+    },
+    {
+      id: 'UjaYLOxjZAI',
+      title: 'I Need Never Get Old',
+    }
+  ]

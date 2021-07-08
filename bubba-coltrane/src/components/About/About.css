@@ -1,7 +1,8 @@
 
+
 .about .site-banner-bg {
   background-image: url(../../assets/about-bubba.jpeg);
-  background-position: center -215px;
+  background-position: center 30%;
  }
 
  .bio {
@@ -69,7 +70,7 @@ bottom: 35px;
   transform-style: preserve-3d;
 }
 
-.gallery-card:hover .gallery-card-inner {
+.gallery-card-inner.isFlipped {
   transform: rotateY(180deg);
 }
 
@@ -98,9 +99,3 @@ color: var(--goldenrod);
 }
 
 
-@media only screen and (max-width:800px) {
-
-  .about.site-banner-bg {
-    background-position: center -70px;
-  }
-}

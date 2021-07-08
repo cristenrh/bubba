@@ -1,18 +1,16 @@
 import React from 'react';
-import Card from './Card';
+import VideoCard from './VideoCard';
 
-const CardList = ({ band }) => {
+const VideoList = ({ video }) => {
     return(
         <div>
             {
-            band.map((user, i) => {
+            video.map((user, i) => {
                 return (
-                <Card 
+                <VideoCard 
                     key={i} 
-                    photo={band[i].photo} 
-                    name={band[i].name} 
-                    instrument={band[i].instrument}
-                    bio={band[i].bio}
+                    id={video[i].id} 
+                    title={video[i].title} 
                 />
             );
         })
@@ -21,4 +19,4 @@ const CardList = ({ band }) => {
     );
     }
 
-export default CardList;
+export default VideoList;

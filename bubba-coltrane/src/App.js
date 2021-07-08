@@ -21,7 +21,7 @@ export default function App() {
   return (
     <Router>
       
-      <div basename={'/react'} className="container" history={history} >
+      <div className="container" history={history} >
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Header/>
