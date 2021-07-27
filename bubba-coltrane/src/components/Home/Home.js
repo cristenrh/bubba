@@ -45,7 +45,7 @@ return (
                                     <div>
                                         <ul className="list pl0 tl">
                                             <li ><a href="https://open.spotify.com/album/6rHkKtc2Zl1a0sA2Dz2gTz"><i ><FontAwesomeIcon icon={faSpotify} /></i>Spotify</a></li>
-                                            <li><a href="https://www.amazon.com/dp/B0892SPKRZ/ref=cm_sw_em_r_mt_dp_U_kda0EbRMGAQ8K"><i ><FontAwesomeIcon icon={faAmazon} /></i> Amazon Music</a></li>
+                                            <li ><a href="https://www.amazon.com/dp/B0892SPKRZ/ref=cm_sw_em_r_mt_dp_U_kda0EbRMGAQ8K"><i ><FontAwesomeIcon icon={faAmazon} /></i> Amazon Music</a></li>
                                             <li ><a href="https://music.apple.com/us/album/brew-train-ep/1514950873?uo=4&amp;app=itunes&amp;at=1001lry3&amp;ct=dashboard"><i ><FontAwesomeIcon icon={faItunes} /></i>iTunes</a></li>
                                         </ul>
                                     </div>
@@ -53,7 +53,6 @@ return (
                                         <ul className="list pl0 tl">
                                         <li ><a href="https://soundcloud.com/bubba-coltrane/sets/brew-train"><i ><FontAwesomeIcon icon={faSoundcloud} /></i> SoundCloud</a></li>
                                         <li ><a href="https://music.apple.com/us/album/brew-train-ep/1514950873"><i ><FontAwesomeIcon icon={faApple} /></i>Apple music</a></li>
-                                        <li ><a href="https://play.google.com/store/music/artist?id=Amzzhjiq5hbcowdtq5txpw2zi2i"><i ><FontAwesomeIcon icon={faGooglePlay} /></i>Google Play music</a></li>
                                         </ul>
 
                                     </div>
