@@ -7,7 +7,6 @@ import { faItunes}  from '@fortawesome/free-brands-svg-icons' ;
 import { faAmazon}  from '@fortawesome/free-brands-svg-icons' ;
 import { faApple }  from '@fortawesome/free-brands-svg-icons' ;
 import { faSoundcloud }  from '@fortawesome/free-brands-svg-icons' ;
-import { faGooglePlay }  from '@fortawesome/free-brands-svg-icons' ;
 
 
 
