@@ -1,5 +1,4 @@
 import './Header.css';
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon as MenuIcon } from '@fortawesome/react-fontawesome';
 import { FontAwesomeIcon as CloseMenu } from '@fortawesome/react-fontawesome';

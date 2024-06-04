@@ -24,10 +24,10 @@ export const band = [
       bio: ''
     },
     {
-      photo: 'frank.png',
-      name: 'Frank Chodacki',
-      instrument: 'Saxaphone & Tequila',
-      bio: ' Tequila expert. Misfit horn section.'
+      photo: 'jen.png',
+      name: 'Jennifer Nailos',
+      instrument: 'Saxaphone & Dancin\'',
+      bio: ' Misfit horn section.'
     },
     {
       photo: 'dave.png',
