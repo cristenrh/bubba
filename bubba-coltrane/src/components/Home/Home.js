@@ -1,6 +1,7 @@
 
 import './Home.css';
 import Brewtrain from "../../assets/brewTrainCover.png";
+import FunkyXmas from "../../assets/xmasLogo.png";
 import ShotBlock from "../../assets/sbpCover.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons' ;
@@ -24,17 +25,33 @@ return (
                   
                   <div className="grid-container tc pv3">
                       <div> 
+                          <img className="brewcover" src={FunkyXmas} alt="Funky Christmas Logo" />
+                      </div>
+                      <div>
+                          <h3>Get groovy this holiday season with our new Christmas single <i>Funky Christmas</i>!</h3>
+                          <p><a href="https://distrokid.com/hyperfollow/bubbacoltraneandthetrainwrecks/funky-christmas">Click here for streaming options!</a></p>
+                          
+                      </div>
+                     
+                  </div>    
+    
+          </section>
+
+            <section  className="cover-bg content">
+                  
+                  <div className="grid-container tc pv3">
+                      <div> 
                           <img className="brewcover" src={ShotBlock} alt="Shot Block Party Album Cover" />
                       </div>
                       <div>
-                          <h3>Our new EP <i>Shot Block Party</i>!</h3>
-                          Available June 11, 2024 on all your favorite streaming services!
-
+                          <h3>Our latest EP <i>Shot Block Party</i>!</h3>
+                          
                           <p>
                             <i>"Bubba Coltrane and the Train Wrecks know how to party.  Shot Block Party sounds and feels like a Bubba Coltrane origin story!"</i>
                           </p>
                           <p>-David Beck - Producer</p>
                           <p><a href="https://distrokid.com/hyperfollow/bubbacoltraneandthetrainwrecks/shot-block-party">Click here for streaming options!</a></p>
+                          <p><a href="https://bubbacoltrane.bandcamp.com/album/shot-block-party-2">Order a Real CD here</a></p>
                       </div>
                      
                   </div>    
